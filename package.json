@@ -1,0 +1,29 @@
+{
+  "name": "herbs2repl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/repl.js",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "gradient-string": "^1.2.0",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 12.3.0"
+  },
+  "keywords": [
+    "herbs",
+    "repl"
+  ],
+  "author": "David Lojudice Sb",
+  "homepage": "https://github.com/herbsjs/herbs2repl",
+  "license": "MIT"
+}
