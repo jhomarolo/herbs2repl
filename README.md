@@ -40,3 +40,7 @@ const main = async (injection) => {
 
 main().then()
 ```
+
+Then run on your terminal:
+
+     $ node ./src/infra/repl
