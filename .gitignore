@@ -116,3 +116,4 @@ dist
 .editorconfig
 /.eslintrc.json
 .prettierrc
+.DS_Store
