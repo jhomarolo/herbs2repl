@@ -4,11 +4,11 @@ const inquirer = require('inquirer')
 const chalk = require('chalk')
 const gradient = require('gradient-string')
 
-async function list(usecases) {
+async function list(usecases, groupBy) {
 
     let ucs = usecases.map((uc) => {
         return {
-            name: uc.tags.group + ' - ' + uc.usecase.description,
+            name: uc.tags[groupBy] + ' - ' + uc.usecase.description,
             value: uc.usecase
         }
     })
@@ -102,13 +102,13 @@ async function execute(usecase, user) {
 
 }
 
-async function repl (usecases, user) {
+async function repl(usecases, user, { groupBy }) {
     let coolGradient = gradient('gold', 'white')
     console.log(chalk.bold(coolGradient('\nHerbs - Interative REPL')))
     console.log(chalk.dim('press ^C to exit\n'))
 
     while (true) {
-        const usecase = await list(usecases)
+        const usecase = await list(usecases, groupBy)
         printDoc(usecase)
         await execute(usecase, user)
         console.log('')

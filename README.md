@@ -35,7 +35,7 @@ const main = async (injection) => {
         canGetLists: true, canUpdateItem: true, canUpdateList: true
     }
 
-    repl(ucs, user)
+    repl(ucs, user, {groupBy: "group"})
 }
 
 main().then()
