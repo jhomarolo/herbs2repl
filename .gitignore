@@ -114,6 +114,5 @@ dist
 .yarn/build-state.yml
 .pnp.*
 .editorconfig
-/.eslintrc.json
 .prettierrc
 .DS_Store
