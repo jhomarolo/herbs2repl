@@ -10,7 +10,7 @@ Herbs REPL
 
 ### Using
 
-`srs/domain/usecases/_uclist.js`:
+`src/domain/usecases/_uclist.js`:
 ```javascript
 module.exports = (injection) => {
     return [
@@ -21,7 +21,7 @@ module.exports = (injection) => {
 }
 ```
 
-`srs/infra/repl/index.js`:
+`src/infra/repl/index.js`:
 ```javascript
 const usecases = require('../../domain/usecases/_uclist')
 const repl = require('@herbsjs/herbs2repl')
